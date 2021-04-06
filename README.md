@@ -1,4 +1,4 @@
-# Discord-MC-Server-Start
+# RemoteStart
 Script that let's you run a .bat file to start your MC server by issuing a command from your Discord server, so fairly niche use-case. I have it set to start when my PC starts, it takes up about 20 MB RAM in the background, so minimal memory usage.
 
 I HIGHLY suggest using the DiscordSRV plugin(https://www.spigotmc.org/resources/discordsrv.18494/) to achieve near-complete Discord integration with Minecraft. 

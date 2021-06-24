@@ -2,16 +2,11 @@ import os
 import subprocess
 
 import discord
-import youtube_dl
-from youtube_api import YouTubeDataAPI
+
 
 intents = discord.Intents().all()
 activity = discord.Activity(name='Children', type=discord.ActivityType.watching)
 bot = discord.Client(intents=intents, activity=activity)
-yt = YouTubeDataAPI("AIzaSyCk0ndEUOUYPB1gxdcsNTOVmSKzdzo0gCU")
-link = "https://www.youtube.com/watch?v="
-os.chdir('C:/Songs')
-searchSong = ""
 
 
 @bot.event

@@ -27,28 +27,8 @@ async def on_message(message):
 
 @bot.event
 async def on_message(message):
-    if message.content == "!pp":
-        bot.say("PP Test")
-
-
-@bot.event
-async def on_message(message):
-    search_song = str(message.content)
-    if search_song.startswith('<play'):
-        search_song = search_song[6:]
-        searches = yt.search(q=search_song, max_results=1)
-        valuesColl = searches[0].values()
-        valueIter = iter(valuesColl)
-        songID = next(valueIter)
-
-        opts = [(link + songID)]
-        youtube_dl.main(opts)
-        files = [x for x in os.listdir('C:\\Songs') if x.endswith(".mp4")]
-        newest = max(files, key=os.path.getctime)
-        # channel = message.channel
-        voice_channel = message.author.voice.channel
-        vc = await voice_channel.connect()
-        vc.play(discord.FFmpegPCMAudio(newest))
+    if message.content == "?pp":
+        await message.channel.send("PP Test")
 
 
 @bot.event

@@ -50,4 +50,4 @@ async def on_voice_state_update(member, before, after):
         await member.edit(voice_channel=None)
 
 
-bot.run("NTYwOTc3NDI3MDY1NjAyMDQ4.XJ1g8Q.hbG-G7sAl9m3CWonHwezDyVolTk")
+bot.run("BotToken")

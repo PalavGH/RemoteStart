@@ -5,7 +5,7 @@ import discord
 
 
 intents = discord.Intents().all()
-activity = discord.Activity(name='Children', type=discord.ActivityType.watching)
+activity = discord.Activity(name='VCT', type=discord.ActivityType.watching)
 bot = discord.Client(intents=intents, activity=activity)
 
 
